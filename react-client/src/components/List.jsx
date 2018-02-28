@@ -8,9 +8,9 @@ const List = (props) => (
     <p></p>
     You have { props.achievements.length } achievements.
     <p></p>
-    Next achievement: {props.currentPeachStatus[props.aidx]}
+    {/* Next achievement: {props.currentPeachStatus[props.aidx]} */}
     <h4> Achievements </h4>
-      { props.achievements.map(achievement => <ListItem achievement={achievement}/>)}
+      {/* { props.achievements.map(achievement => <ListItem achievement={achievement}/>)} */}
   </div>
 )
 
