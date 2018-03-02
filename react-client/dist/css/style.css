@@ -19,7 +19,10 @@ h5 {
 .peachHeader {
   text-align: center; }
 
-.peachScoreboard {
+.peachsbPosition {
+  float: left; }
+
+.peachsb {
   width: 300px;
   padding: 25px;
   padding-bottom: 300px;
@@ -27,7 +30,7 @@ h5 {
   margin-left: 150px;
   border: 10px solid pink; }
 
-.peachScorefont {
+.peachsbFont, .peachpFont {
   padding-top: 10px;
   padding-bottom: 10px; }
 
@@ -36,3 +39,14 @@ h4 {
   -webkit-margin-after: 0px;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px; }
+
+.peachp {
+  width: 300px;
+  padding: 25px;
+  padding-bottom: 300px;
+  margin-top: 50px;
+  margin-right: 150px;
+  border: 10px solid pink; }
+
+.peachpPosition {
+  float: right; }

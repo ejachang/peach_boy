@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 // import $ from 'jquery';
 import Scoreboard from './components/Scoreboard.jsx';
 import Comic from './components/Comic.jsx';
-import PeachImage from './components/PeachImage.jsx'
+import PeachImage from './components/PeachImage.jsx';
+import Profile from './components/Profile.jsx';
 // import fakeDBS from './fakeDropboxStorage.js';
 
 class App extends React.Component {
@@ -33,6 +34,7 @@ class App extends React.Component {
         />
     <PeachImage/>
     <Comic/>
+    <Profile/>
     </div>)
   }
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ListItem = (props) => (
+const AchievementItem = (props) => (
   <div>
     {/* <li >{  props.achievement }</li> */}
   </div>
 )
 
-export default ListItem;
+export default AchievementItem;
