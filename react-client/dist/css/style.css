@@ -1,3 +1,20 @@
+h5 {
+  -webkit-margin-before: 10px;
+  -webkit-margin-after: 1px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
+
 .peachFont {
-  font-family: Arial; 
-}
+  font-family: Arial; }
+
+.peachTitle {
+  font-size: 46px;
+  -webkit-margin-before: 40px;
+  -webkit-margin-after: 0px; }
+
+.peachSubtitle {
+  -webkit-margin-before: 10px;
+  -webkit-margin-after: 0px; }
+
+.peachHeader {
+  text-align: center; }

@@ -22,8 +22,8 @@ class App extends React.Component {
   
   render() {
     return (<div>
-      <h1 className="peachFont">Son of a Peach</h1>
-      <h4 className="peachFont">click the peach to free him</h4>
+      <h1 className="peachFont peachTitle peachHeader">son of a peach</h1>
+      <h5 className="peachFont peachSubtitler peachHeader">click the peach to free him!</h5>
 
       <List
         peachClickCount={this.state.clicks}
