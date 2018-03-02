@@ -1,8 +1,9 @@
 import React from 'react';
 import ListItem from './ListItem.jsx';
 
-const List = (props) => (
-  <div id="peachText">
+const Scoreboard = (props) => (
+  <div className="peachFont peachScoreboard">
+  <div>My name is:</div>
     <p></p>
     The peach has been clicked { props.peachClickCount } times.
     <p></p>
@@ -14,4 +15,4 @@ const List = (props) => (
   </div>
 )
 
-export default List;
+export default Scoreboard;
