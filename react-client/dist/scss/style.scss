@@ -1,6 +1,12 @@
 $base-font-size: 16px;
 // $base-font-family: Arial;
 
+// #fce4ec
+
+body {
+  background-color:#ffebee
+}
+
 //index - title
 h5 {
   -webkit-margin-before: 10px;
@@ -47,7 +53,8 @@ h4 {
   padding-bottom: 325px;
   margin-top: 50px;
   margin-right: 25px;
-  border: 10px solid pink;
+  border: 10px solid #f8bbd0;
+  background-color: #f8bbd0
 }
 .peachpPosition {
   float: right;
@@ -59,7 +66,8 @@ h4 {
   padding-bottom: 300px;
   margin-top: 50px;
   margin-left: 25px;
-  border: 10px solid pink;
+  border: 10px solid #f8bbd0;
+  background-color: #f8bbd0;
   // margin:0;
 }
 
