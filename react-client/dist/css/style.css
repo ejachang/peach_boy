@@ -22,5 +22,16 @@ h5 {
 .peachScoreboard {
   width: 300px;
   padding: 25px;
-  padding-left: 50px;
+  padding-top: 50px;
+  padding-left: 150px;
   border: 10px; }
+
+.peachScorefont {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+h4 {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px; }
