@@ -7,7 +7,7 @@ const Scoreboard = (props) => (
   <div className="peachsbFont"> You have { props.achievements.length } achievements.</div>
   <div className="peachsbFont">Next achievement:  {/* {props.currentPeachStatus[props.aidx]} */}</div> 
    
-  <h4 className="peachsFont"> Achievements </h4>
+  <h4 className="peachsFont peachsbSubtitle"> Achievements </h4>
   {/* { props.achievements.map(achievement => <ListItem achievement={achievement}/>)} */}
   </div>
 )

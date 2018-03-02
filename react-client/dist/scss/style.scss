@@ -28,22 +28,6 @@ h5 {
   text-align: center;
 }
 
-//Scoreboard
-.peachsbPosition {
-  float: left;
-}
-
-//Scoreboard
-.peachsb {
-  width: 300px;
-  padding: 25px;
-  padding-bottom: 300px;
-  margin-top: 50px;
-  margin-left: 150px;
-  border: 10px solid pink;
-  // margin:0;
-}
-
 //Scoreboard and Profile
 .peachsbFont, .peachpFont {
   padding-top: 10px; 
@@ -56,17 +40,33 @@ h4 {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 }
-
 //Profile
 .peachp {
   width: 300px;
   padding: 25px;
-  padding-bottom: 300px;
+  padding-bottom: 325px;
   margin-top: 50px;
-  margin-right: 150px;
+  margin-right: 25px;
   border: 10px solid pink;
 }
-
 .peachpPosition {
   float: right;
+}
+//Scoreboard
+.peachsb {
+  width: 300px;
+  padding: 25px;
+  padding-bottom: 300px;
+  margin-top: 50px;
+  margin-left: 25px;
+  border: 10px solid pink;
+  // margin:0;
+}
+
+.peachsbPosition {
+  float: left;
+}
+
+.peachsbSubtitle {
+  margin-top: 10px; 
 }
