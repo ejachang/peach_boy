@@ -16,26 +16,26 @@ class App extends React.Component {
         'girl': null,
         'grill': null,
       },
-      selected:'girl',
+      selected: 'girl',
       clicks: 0,
       achievements: [],
-    }
+    };
   }
   
   render() {
     return (<div>
       <div className="peachHeader">
-      <h1 className="peachFont peachTitle">Son of a Peach</h1>
-      <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
+        <h1 className="peachFont peachTitle">Son of a Peach</h1>
+        <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
       </div>
       <Scoreboard
         peachClickCount={this.state.clicks}
         achievements={this.state.achievements}
-        />
-    <PeachImage/>
-    <Comic/>
-    <Profile/>
-    </div>)
+      />
+      <PeachImage/>
+      <Comic/>
+      <Profile/>
+    </div>);
   }
-};
+}
 ReactDOM.render(<App />, document.getElementById('app'));
