@@ -17,6 +17,6 @@ const Comic = (props) => (
   //         id="peachPanel"></img>
   //     </a>
   // </div>
-)
+);
 
 export default Comic;

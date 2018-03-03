@@ -1,5 +1,5 @@
 import React from 'react';
-import AchievementItem from './AchievementItem.jsx';
+import AchievementItem from './AchievementItem';
 
 const Scoreboard = (props) => (
   <div className="peachFont peachsbFont peachsb peachsbPosition">
