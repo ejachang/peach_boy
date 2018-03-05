@@ -9,6 +9,7 @@ import Comic from './components/Comic';
 import PeachImage from './components/PeachImage';
 import Profile from './components/Profile';
 
+
 const app = document.getElementById('app');
 
 ReactDOM.render(
