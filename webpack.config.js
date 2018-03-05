@@ -1,9 +1,10 @@
 var path = require('path');
-var SRC_DIR = path.join(__dirname, '/react-client/src');
-var DIST_DIR = path.join(__dirname, '/react-client/dist');
+var SRC_DIR = path.join(__dirname, '/src');
+var DIST_DIR = path.join(__dirname, '/src/peach-react/dist');
 
 module.exports = {
-  entry: `${SRC_DIR}/index.js`,
+  context: SRC_DIR,
+  entry: `${SRC_DIR}/peach-react/index.js`,
   output: {
     path: DIST_DIR,
     filename: 'bundle.js'
