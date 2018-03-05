@@ -28,8 +28,6 @@ const addAchievement = () => {
       achievement: achievementList[achievementID],
     }
   };
-  
-  
-
-
 };
+
+export default addAchievement;
