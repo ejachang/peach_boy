@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import AchievementItem from './AchievementItem';
 
+import { addAchievement } from '../peach-redux/actions/achivementActions';
+
 const Scoreboard = () => (
   <div className="peachFont peachsbFont peachsb peachsbPosition">
     <div className="peachsbFont"> The peach has been clicked 0 times.</div>
