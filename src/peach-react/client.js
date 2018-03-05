@@ -14,10 +14,10 @@ const app = document.getElementById('app');
 
 ReactDOM.render(
   <Provider store={store}>
-    <Title/>
+    {/* <Title/> */}
     <Scoreboard/>
-    <PeachImage/>
-    <Comic/>
-    <Profile/>
+    {/* <PeachImage/> */}
+    {/* <Comic/> */}
+    {/* <Profile/> */}
   </Provider>, app
 );
