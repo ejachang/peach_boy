@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import store from '../peach-redux/store';
+import store from './store';
 import Title from './components/Title';
 import Scoreboard from './components/Scoreboard';
 import Comic from './components/Comic';
