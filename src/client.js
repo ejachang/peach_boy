@@ -20,4 +20,18 @@ ReactDOM.render(
     {/* <Comic/> */}
     {/* <Profile/> */}
   </Provider>, app
+  
 );
+//OLD
+// ReactDOM.render(
+//   <div>
+//     <div className="peachHeader">
+//       <h1 className="peachFont peachTitle">Son of a Peach</h1>
+//       <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
+//     </div>
+//     <Scoreboard/>
+//     <PeachImage/>
+//     <Comic/>
+//     <Profile/>
+//   </div>, app
+// );
