@@ -1,7 +1,7 @@
 const achievementsReducer = ( state = {achievements: []}, action) => {
   switch (action.type) {
   case 'ADD_ACHIEVEMENT_TITLE': {
-    return state.concat([action.title]);
+    return state.push([action.title]);
   }
   default:
     return state; 
