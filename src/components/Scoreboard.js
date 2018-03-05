@@ -3,7 +3,14 @@ import { connect } from 'react-redux';
 
 import AchievementItem from './AchievementItem';
 
-import { addAchievement } from '../peach-redux/actions/achivementActions';
+import { addAchievement } from '../actions/achievementActions';
+
+// @connect((store) => {
+// return {
+    
+// }
+// })
+
 
 const Scoreboard = () => (
   <div className="peachFont peachsbFont peachsb peachsbPosition">
