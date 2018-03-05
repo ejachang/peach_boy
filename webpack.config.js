@@ -4,7 +4,7 @@ var DIST_DIR = path.join(__dirname, '/src/peach-react/dist');
 
 module.exports = {
   context: SRC_DIR,
-  entry: `${SRC_DIR}/peach-react/index.js`,
+  entry: `${SRC_DIR}/peach-react/client.js`,
   output: {
     path: DIST_DIR,
     filename: 'bundle.js'
