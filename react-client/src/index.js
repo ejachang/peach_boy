@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import $ from 'jquery';
 import Scoreboard from './components/Scoreboard';
 import Comic from './components/Comic';
 import PeachImage from './components/PeachImage';
