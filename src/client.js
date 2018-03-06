@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import store from './store';
-// import reducerIndex from '../reducers/reducer-index';
+import reducerIndex from './reducers/reducer-index';
 
 import App from './components/App';
 import Title from './components/Title';
@@ -14,7 +14,7 @@ import Profile from './components/Profile';
 
 const app = document.getElementById('app');
 
-ReactDOM.render(
+render(
   <Provider store={store}>
     <App />
   </Provider>, app
