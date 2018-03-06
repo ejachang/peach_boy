@@ -1,5 +1,6 @@
-react-client/dist/bundle.js
-react-client/archive-index.js
+client/dist/bundle.js
+client/archive-index.js
 /node_modules
 package-lock.json
 webpack.config.js
+client/dist/bundle.js
