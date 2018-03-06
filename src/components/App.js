@@ -6,11 +6,11 @@ import Scoreboard from './Scoreboard';
 
 const App = () => {
   <div>
-    <Title />
-    <Scoreboard />
+    {/* <Title /> */}
+    {/* <Scoreboard /> */}
     {/* <PeachImage /> */}
     {/* <Comic /> */}
-    <Profile />
+    {/* <Profile /> */}
   </div>;
 };
 
