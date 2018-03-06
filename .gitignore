@@ -1,6 +1,12 @@
+#node
+/node_modules
+
+#files
 client/dist/bundle.js
 client/archive-index.js
-/node_modules
 package-lock.json
 webpack.config.js
-client/dist/bundle.js
+
+#images
+client/dist/comic-a/
+client/dist/img-ref/
