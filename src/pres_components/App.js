@@ -8,8 +8,8 @@ const App = () => {
   <div>
     <Title />
     <Scoreboard />
-    <PeachImage />
-    <Comic />
+    {/* <PeachImage /> */}
+    {/* <Comic /> */}
     <Profile />
   </div>;
 };
