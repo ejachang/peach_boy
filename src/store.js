@@ -8,7 +8,7 @@ import reducerIndex from './reducers/reducer-index';
 // import Indices from './reducers/reducer-index';
 
 // const middleware = applyMiddleware(promise(), thunk, logger());
-const storeIndex = createStore(reducerIndex);
+const store = createStore(reducerIndex);
 // const storeIndex = createStore(reducerIndex, middleware);
 
-export default storeIndex;
+export default store;
