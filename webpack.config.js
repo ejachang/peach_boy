@@ -3,7 +3,7 @@ var SRC_DIR = path.join(__dirname, '/src');
 var DIST_DIR = path.join(__dirname, '/src/dist');
 
 module.exports = {
-  context: SRC_DIR,
+  // context: SRC_DIR,
   entry: `${SRC_DIR}/client.js`,
   output: {
     path: DIST_DIR,
