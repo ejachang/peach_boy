@@ -5,16 +5,40 @@ import Scoreboard from './components/Scoreboard';
 import Comic from './components/Comic';
 import PeachImage from './components/PeachImage';
 import Profile from './components/Profile';
-// import fakeDBS from './fakeDropboxStorage.js';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      avatar: {
+        'boy': null,
+        'girl': null,
+        'grill': null,
+      },
+      selected: 'girl',
+      clicks: 0,
+      achievements: [],
+    };
+  }
+  
+  render() {
+    return (
+      <div>
+        <Header />
+        <Scoreboard
+          peachClickCount={this.state.clicks}
+          achievements={this.state.achievements}
+        />
+        <PeachImage/>
+        <Comic/>
+        <Profile/>
+      </div>
+    );
+  }
+}
 
 const app = document.getElementById('app');
 
 ReactDOM.render(
-  <div>
-    <Header />
-    <Scoreboard />
-    <PeachImage />
-    <Comic />
-    <Profile />
-  </div>, app
+  <App />, app
 );
