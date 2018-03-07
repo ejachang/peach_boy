@@ -15,9 +15,10 @@ class App extends React.Component {
         'girl': null,
         'grill': null,
       },
-      selected: 'girl',
+      selected: '',
       clicks: 0,
       achievements: [],
+      image: [],
     };
   }
   
