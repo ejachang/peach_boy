@@ -4,7 +4,7 @@
 #files
 client/dist/bundle.js
 client/archive-index.js
-package-lock.json
+/package-lock.json
 webpack.config.js
 
 #images
