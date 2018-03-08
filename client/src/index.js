@@ -37,7 +37,7 @@ class App extends React.Component {
         'No more peaches!'
       ],
       image: [
-        '../img-ref/a-img/0-modal.png'
+        './img-ref/a-img/0-modal.png'
       ],
     };
   }
