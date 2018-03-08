@@ -58,3 +58,9 @@ h4 {
 
 .peachsbSubtitle {
   margin-top: 10px; }
+
+.peachImage {
+  height: 26%;
+  width: 26%;
+  margin-left: auto;
+  margin-right: auto; }

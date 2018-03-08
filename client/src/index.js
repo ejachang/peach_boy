@@ -51,11 +51,11 @@ class App extends React.Component {
           peachClickCount={this.state.clicks}
           achievements={this.state.achievements}
         />
+        <Comic/>
+        <Profile/>
         <PeachImage
           peachImages={this.state.image}
         />
-        <Comic/>
-        <Profile/>
       </div>
     );
   }
