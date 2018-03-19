@@ -45,11 +45,6 @@ class App extends React.Component {
         './img-ref/avatar-grill.png'
       ]
     };
-    this.peachClick = this.peachClick.bind(this); 
-  }
-
-  peachClick() {
-      
   }
 
   render() {
@@ -60,7 +55,6 @@ class App extends React.Component {
         <Scoreboard
           peachClickCount={this.state.clicks}
           achievements={this.state.achievements}
-
         />
         <Comic/>
         <Profile

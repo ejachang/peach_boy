@@ -79,3 +79,11 @@ h4 {
 .peachSides {
   border: 10px solid #f8bbd0;
   background-color: #f8bbd0; }
+
+.peachAvatar {
+  height: 50%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 70px;
+  padding-top: 50px; }

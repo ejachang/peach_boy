@@ -1,7 +1,7 @@
 import React from 'react';
 import AchievementItem from './AchievementItem';
 
-const Scoreboard = () => (
+const Scoreboard = (props) => (
   <div className="peachFont peachsbFont peachsb peachsbPosition">
     <div className="peachsbFont"> The peach has been clicked 0 times.</div>
     <div className="peachsbFont"> You have 0 achievements.</div>
