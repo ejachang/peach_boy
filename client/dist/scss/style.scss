@@ -9,8 +9,6 @@ body {
 
 //index - title
 h5 {
-  -webkit-margin-before: 10px;
-  -webkit-margin-after: 1px;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 }
@@ -63,12 +61,11 @@ h4 {
 .peachsb {
   width: 300px;
   padding: 25px;
-  padding-bottom: 300px;
+  padding-bottom: 345px;
   margin-top: 50px;
   margin-left: 25px;
   border: 10px solid #f8bbd0;
   background-color: #f8bbd0;
-  // margin:0;
 }
 
 .peachsbPosition {
@@ -99,4 +96,9 @@ h4 {
   display: inline-block;
   border-radius: 50%;
   font-family: Sans-serif;
+}
+
+.peachSides {
+  border: 10px solid #f8bbd0;
+  background-color: #f8bbd0;
 }
