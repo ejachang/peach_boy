@@ -7,7 +7,11 @@ const Profile = (props) => (
     <div className="peachpFont">My name is: <input type="text"></input></div>
     {/* conditional rendering of name to appear here */}
     {/* avatar here */}
-    <div className="peachpFont">I am a {/* TODO: buttons here*/}</div> 
+    <div className="peachpFont">I am a </div> 
+    <button>Girl</button>
+    <button>Boy</button>
+    <button>Grill</button>
+  
   </div>
 );
 

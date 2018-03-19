@@ -39,6 +39,11 @@ class App extends React.Component {
       image: [
         './img-ref/a-img/0-modal.png'
       ],
+      avatar: [
+        './img-ref/avatar-boy.png',
+        './img-ref/avatar-girl.png',
+        './img-ref/avatar-grill.png'
+      ]
     };
     this.peachClick = this.peachClick.bind(this); 
   }
@@ -55,10 +60,12 @@ class App extends React.Component {
         <Scoreboard
           peachClickCount={this.state.clicks}
           achievements={this.state.achievements}
-          
+
         />
         <Comic/>
-        <Profile/>
+        <Profile
+          peachAvatar={this.state.avatar}
+        />
         <PeachImage
           peachImages={this.state.image}
         />
