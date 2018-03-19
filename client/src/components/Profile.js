@@ -8,9 +8,9 @@ const Profile = (props) => (
     {/* conditional rendering of name to appear here */}
     {/* avatar here */}
     <div className="peachpFont">I am a </div> 
-    <button>Girl</button>
-    <button>Boy</button>
-    <button>Grill</button>
+    <button className="peachButton">Girl</button>
+    <button className="peachButton">Boy</button>
+    <button className="peachButton">Grill</button>
   
   </div>
 );
