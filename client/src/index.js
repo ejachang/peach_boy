@@ -40,8 +40,13 @@ class App extends React.Component {
         './img-ref/a-img/0-modal.png'
       ],
     };
+    this.peachClick = this.peachClick.bind(this); 
   }
-  
+
+  peachClick() {
+      
+  }
+
   render() {
     return (
       <div>
@@ -50,6 +55,7 @@ class App extends React.Component {
         <Scoreboard
           peachClickCount={this.state.clicks}
           achievements={this.state.achievements}
+          
         />
         <Comic/>
         <Profile/>

@@ -5,7 +5,7 @@ const PeachImage = (props) => {
 
   return (
     <div>
-      <img src={peachImages[0]}
+      <img src={peachImages[0] }
         className='peachImage'/>
     </div>
   );

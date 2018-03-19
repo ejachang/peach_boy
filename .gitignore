@@ -10,3 +10,6 @@ webpack.config.js
 #images
 client/dist/comic-a/
 client/dist/img-ref/
+
+#yarn
+yarn.lock
