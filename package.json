@@ -11,6 +11,7 @@
   "author": "Angela",
   "license": "",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
     "babel-loader": "^8.0.0-beta.2",
@@ -27,6 +28,7 @@
     "@angular/cli": "^1.6.3",
     "@babel/core": "^7.0.0-beta.42",
     "@babel/preset-env": "^7.0.0-beta.42",
+    "@babel/preset-react": "^7.0.0-beta.42",
     "angular": "^1.6.7",
     "babel-preset-env": "^1.6.1",
     "body-parser": "^1.17.2",
