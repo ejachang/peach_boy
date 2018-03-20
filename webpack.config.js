@@ -1,10 +1,9 @@
 var path = require('path');
-var SRC_DIR = path.join(__dirname, '/src');
-var DIST_DIR = path.join(__dirname, '/src/dist');
+var SRC_DIR = path.join(__dirname, 'client/src');
+var DIST_DIR = path.join(__dirname, 'client/dist');
 
 module.exports = {
-  // context: SRC_DIR,
-  entry: `${SRC_DIR}/client.js`,
+  entry: `${SRC_DIR}/index.js`,
   output: {
     path: DIST_DIR,
     filename: 'bundle.js'
