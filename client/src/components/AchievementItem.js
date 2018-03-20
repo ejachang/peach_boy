@@ -1,17 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-const AchievementItem = ({ onClick, text }) => (
-  <li
-    onClick={onClick}
-  >
-    {text}
-  </li>
+const AchievementItem = (props) => (
+  <div>
+    {/* <li >{  props.achievement }</li> */}
+  </div>
 );
-
-AchievementItem.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  text: PropTypes.string.isRequired
-};
 
 export default AchievementItem;
