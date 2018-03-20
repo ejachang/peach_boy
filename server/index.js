@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 
 var webpack = require('webpack');
-var items = require('../database-mysql');
+var items = require('../database-postgresql');
 
 var app = express();
 
