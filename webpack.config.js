@@ -10,15 +10,15 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?/,
         include: SRC_DIR,
         loader: 'babel-loader',
-        query: {
-          presets: ['react', 'es2015']
-        }
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.jsx', '.js', '.css'],
+  },
 };
