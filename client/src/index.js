@@ -56,3 +56,5 @@ render (
   </Provider>, app
 
 );
+// For tests
+// export default App;

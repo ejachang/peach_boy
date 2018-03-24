@@ -13,7 +13,7 @@ let store = createStore(
 
 let initialState = store.getState();
 
-console.log('initial state', initialState)
+// console.log('initial state', initialState)
 
 // const middleware = applyMiddleware(promise(), thunk, logger());
 // const store = ( initialState = {} ) => {
