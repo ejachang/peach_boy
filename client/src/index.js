@@ -15,11 +15,6 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      avatar: {
-        'boy': null,
-        'girl': null,
-        'grill': null,
-      },
       selected: '',
       clicks: 0,
       achievements: [
@@ -44,11 +39,11 @@ class App extends React.Component {
       image: [
         './img-ref/a-img/0-modal.png'
       ],
-      avatar: [
-        './img-ref/avatar-boy.png',
-        './img-ref/avatar-girl.png',
-        './img-ref/avatar-grill.png'
-      ]
+      // avatar: [
+      //   './img-ref/avatar-boy.png',
+      //   './img-ref/avatar-girl.png',
+      //   './img-ref/avatar-grill.png'
+      // ]
     };
   }
   render() {
