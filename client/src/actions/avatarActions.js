@@ -2,9 +2,9 @@ const CHANGE_AVATAR = 'CHANGE_AVATAR';
 
 const changeAvatar = (avatar) => {
   let avatarInfo = { type: CHANGE_AVATAR };
-  if (avatar === girl) {
+  if (avatar === 'girl') {
     avatarInfo.payload = './img-ref/avatar-girl.png';
-  } else if (avatar === boy) {
+  } else if (avatar === 'boy') {
     avatarInfo.payload = './img-ref/avatar-boy.png';
   } else {
     avatarInfo.payload = './img-ref/avatar-grill.png';
@@ -13,8 +13,4 @@ const changeAvatar = (avatar) => {
 };
 
 
-export default {
-  changeGirl,
-  changeBoy,
-  changeGrill
-};
+export default { changeAvatar };
