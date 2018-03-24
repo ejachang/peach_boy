@@ -13,7 +13,7 @@ const Profile = (props) => {
       <button className="peachButton">Boy</button>
       <button className="peachButton">Grill</button>  
       <div>
-        <img src={ peachAvatar[0] }
+        <img src={ peachAvatar }
           className='peachAvatar'/>
       </div>
     </div>

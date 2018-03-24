@@ -39,11 +39,7 @@ class App extends React.Component {
       image: [
         './img-ref/a-img/0-modal.png'
       ],
-      // avatar: [
-      //   './img-ref/avatar-boy.png',
-      //   './img-ref/avatar-girl.png',
-      //   './img-ref/avatar-grill.png'
-      // ]
+      avatar: './img-ref/avatar-girl.png',
     };
   }
   render() {
@@ -69,8 +65,12 @@ class App extends React.Component {
 const app = document.getElementById('app');
 
 render (
-  <Provider store={store}>
-    <App />
-  </Provider>, app
-
+  <App />, app
 );
+
+// render (
+//   <Provider store={store}>
+//     <App />,
+//   </Provider>, app
+
+// );

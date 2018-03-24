@@ -7,7 +7,7 @@ const avatars = {
 };
 
 const defaultAvatar = Object.freeze({
-  avatar: girl
+  avatar: './img-ref/avatar-girl.png'
 });
 
 const avatarReducer = () => {
