@@ -11,7 +11,7 @@ const defaultAvatar = Object.freeze({
 });
 
 const avatarReducer = () => {
-  if (action.type) {
+  if (action.type === 'CHANGE_AVATAR') {
     const newAvatar = [...state, action.payload];
     return newAvatar;
   } 
