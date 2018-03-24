@@ -1,5 +1,5 @@
 const _defaultAvatar = Object.freeze({
-  avatar: './img-ref/avatar-girl.png'
+  payload: './img-ref/avatar-girl.png'
 });
 
 const avatarReducer = (state = _defaultAvatar, action) => {
