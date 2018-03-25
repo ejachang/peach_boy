@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Profile = (props) => {
-  const { peachAvatar } = props;
+  const { peachAvatar, handleAvatarChange, handleNameSubmit } = props;
   return (
     <div className="peachFont peachpFont peachp peachpPosition">
       <h4 className="peachpFont">Profile</h4>
@@ -14,7 +14,7 @@ const Profile = (props) => {
       </div>
       {/* conditional rendering of name to appear here */}
       <div className="peachpFont">I am a </div> 
-      <button className="peachButton">Girl</button>
+      <button className="peachButton" onClick={handleAvatarChanage}>Girl</button>
       <button className="peachButton">Boy</button>
       <button className="peachButton">Grill</button>  
       <div>
