@@ -8,23 +8,25 @@ export const CHANGE_GIRL = 'CHANGE_GIRL';
 export const CHANGE_GRILL = 'CHANGE_GRILL';
 export const CHANGE_BOY = 'CHANGE_BOY';
 
+export const CHANGE_NAME = 'CHANGE_NAME';
+
 export const changeGirl = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: GIRL
+    avatarload: GIRL
   };
 };
 
 export const changeBoy = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: BOY
+    avatarload: BOY
   };
 };
 
 export const changeGrill = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: GRILL
+    avatarload: GRILL
   };   
 };

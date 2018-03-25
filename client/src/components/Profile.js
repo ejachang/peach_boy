@@ -16,10 +16,8 @@ class Profile extends Component {
 
   handleAvatarChange(e) {
     if (e.target.id === 'CHANGE_GIRL') {
-      console.log('change test', changeGirl());
       this.props.dispatch( changeGirl() );
     } else if (e.target.id === 'CHANGE_BOY') {
-      console.log('change test', changeBoy());
       this.props.dispatch( changeBoy() );
     } else if (e.target.id === 'CHANGE_GRILL') {
       this.props.dispatch( changeGrill() );
@@ -28,18 +26,19 @@ class Profile extends Component {
 
   render() {
     let avatar = this.props.avatar;
+    let name = this.props.name;
     return (
       <div className="peachFont peachpFont peachp peachpPosition">
-        <h4 className="peachpFont">Profile</h4>
+        {/* <h4 className="peachpFont">Profile</h4> */}
         {/* TODO: include conditional rendering for name if entered */}
-        <div className="peachpFont">
+        {/* <div className="peachpFont">
           <form>
             <label htmlFor="name">My name is: </label>
             <input type="text"></input>
           </form>
-        </div>
+        </div> */}
         {/* conditional rendering of name to appear here */}
-        <div className="peachpFont">I am a </div> 
+        {/* <div className="peachpFont">I am a </div>  */}
         <button className="peachButton" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
         <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
         <button className="peachButton" id="CHANGE_GRILL" onClick={this.handleAvatarChange}>Grill</button>  
@@ -55,7 +54,8 @@ class Profile extends Component {
 const mapStateToProps = (reduxState) => {
   // console.log('redux state', reduxState);
   return {
-    avatar: reduxState.profileReducer.avatar
+    avatar: reduxState.profileReducer.avatar,
+    name: reduxState.profileReducer.name
   };
 };
 
