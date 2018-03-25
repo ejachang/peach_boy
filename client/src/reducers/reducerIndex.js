@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 
-import achievementsReducer from './scoreboardReducer';
+import scoreboardReducer from './scoreboardReducer';
 import profileReducer from './profileReducer';
 
 const reducerIndex = combineReducers({
-  achievementsReducer,
+  scoreboardReducer,
   profileReducer
 });
 

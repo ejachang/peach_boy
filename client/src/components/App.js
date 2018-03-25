@@ -10,10 +10,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      clicks: 0,
-      achievements: [
-        'Just Peachy!',
-      ],
       image: [
         './img-ref/a-img/0-modal.png'
       ]
@@ -32,8 +28,6 @@ class App extends Component {
           <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
         </div>
         <Scoreboard
-          peachClickCount={this.state.clicks}
-          achievements={this.state.achievements}
         />
         <Comic />
         <Profile />

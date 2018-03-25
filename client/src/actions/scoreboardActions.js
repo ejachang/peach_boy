@@ -1,3 +1,5 @@
+const ADD_ACHIEVEMENT = 'ADD_ACHIEVEMENT';
+
 const achievementList = [
   'Just Peachy!',
   'Aren\'t you a peach',
