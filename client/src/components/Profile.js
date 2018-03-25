@@ -1,13 +1,33 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
+import { changeGirl, changeBoy, changeGrill } from '../actions/profileActions';
+
 class Profile extends Component {
   constructor(props) {
     super(props);
     this.handleNameSubmit = this.handleNameSubmit.bind(this);
     this.handleAvatarChange = this.handleAvatarChange.bind(this);
   }
+
+  handleNameSubmit(e) {
+    //TODO: fill in
+  }
+
+  handleAvatarChange(e) {
+    if (e.target.id === 'CHANGE_GIRL') {
+      console.log('change test', changeGirl());
+      this.props.dispatch( changeGirl() );
+    } else if (e.target.id === 'CHANGE_BOY') {
+      console.log('change test', changeBoy());
+      this.props.dispatch( changeBoy() );
+    } else if (e.target.id === 'CHANGE_GRILL') {
+      this.props.dispatch( changeGrill() );
+    }
+  }
+
   render() {
+    let avatar = this.props.avatar;
     return (
       <div className="peachFont peachpFont peachp peachpPosition">
         <h4 className="peachpFont">Profile</h4>
@@ -20,11 +40,11 @@ class Profile extends Component {
         </div>
         {/* conditional rendering of name to appear here */}
         <div className="peachpFont">I am a </div> 
-        <button className="peachButton" id="CHANGE_GIRL" onClick={handleAvatarChange}>Girl</button>
-        <button className="peachButton" id="CHANGE_BOY" onClick={handleAvatarChange}>Boy</button>
-        <button className="peachButton" id="CHANGE_GRILL" onClick={handleAvatarChange}>Grill</button>  
+        <button className="peachButton" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
+        <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
+        <button className="peachButton" id="CHANGE_GRILL" onClick={this.handleAvatarChange}>Grill</button>  
         <div>
-          <img src={ peachAvatar }
+          <img src={ avatar }
             className='peachAvatar'/>
         </div>
       </div>
@@ -32,4 +52,15 @@ class Profile extends Component {
   }
 }
 
-export default Profile;
+const mapStateToProps = (reduxState) => {
+  // console.log('redux state', reduxState);
+  return {
+    avatar: reduxState.profileReducer.avatar
+  };
+};
+
+// const mapDispatchToProps = (dispatch) => {
+  
+// };
+
+export default connect(mapStateToProps)(Profile);

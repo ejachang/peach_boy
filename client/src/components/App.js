@@ -6,8 +6,6 @@ import Comic from './Comic';
 import PeachImage from './PeachImage';
 import Profile from './Profile';
 
-import { changeGirl, changeBoy, changeGrill } from '../actions/profileActions';
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -20,24 +18,9 @@ class App extends Component {
         './img-ref/a-img/0-modal.png'
       ]
     };
-    
-  }
-  handleNameSubmit(e) {
-
   }
 
-  handleAvatarChange(e) {
-    if (e.target.id === 'CHANGE_GIRL') {
-      this.props.dispatch({ changeGirl });
-    } else if (e.target.id === 'CHANGE_BOY') {
-      this.props.dispatch({ changeBoy });
-    } else if (e.target.id === 'CHANGE_GRILL') {
-      this.props.dispatch({ changeGrill });
-    }
-  }
   render() {
-    // console.log('props test', this.props);
-    let avatar = this.props.avatar;
     return (
       <div>
         <div className="peachHeader">
@@ -52,12 +35,8 @@ class App extends Component {
           peachClickCount={this.state.clicks}
           achievements={this.state.achievements}
         />
-        <Comic/>
-        <Profile
-          peachAvatar={avatar}
-          // handleNameSubmit={this.handleNameSubmit}
-          // handleAvatarChange={this.handleAvatarChange}
-        />
+        <Comic />
+        <Profile />
         <PeachImage
           peachImages={this.state.image}
         />
@@ -66,11 +45,13 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (reduxState) => {
-  // console.log('redux state', reduxState);
-  return {
-    avatar: reduxState.profileReducer.avatar
-  };
-};
+// const mapStateToProps = (reduxState) => {
+//   // console.log('redux state', reduxState);
+//   return {
+    
+//   };
+// };
 
-export default connect(mapStateToProps)(App);
+// export default connect(mapStateToProps)(App);
+
+export default connect()(App);

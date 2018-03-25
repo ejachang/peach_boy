@@ -1,14 +1,16 @@
 import { applyMiddleware, createStore } from 'redux';
 
-import logger from 'redux-logger';
-import thunk from 'redux-thunk';
-import promise from 'redux-promise-middleware';
+// import thunk from 'redux-thunk';
+
+// import { logger } from 'redux-logger';
+// import promise from 'redux-promise-middleware';
+// const middleware = applyMiddleware(promise(), thunk, logger());
 
 import reducerIndex from './reducers/reducerIndex';
 
-
 let store = createStore(
   reducerIndex,
+  // applyMiddleware(thunk)
   // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
 );
@@ -17,7 +19,6 @@ let initialState = store.getState();
 
 // console.log('initial state', initialState)
 
-// const middleware = applyMiddleware(promise(), thunk, logger());
 // const store = ( initialState = {} ) => {
 //   createStore(
 //     reducerIndex, 

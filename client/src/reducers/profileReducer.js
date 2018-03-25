@@ -1,4 +1,4 @@
-import { CHANGE_GIRL, CHANGE_GRILL, CHANGE_BOY } from '../actions/profileActions';
+import { CHANGE_AVATAR, CHANGE_GIRL, CHANGE_BOY, CHANGE_GRILL } from '../actions/profileActions';
 
 const _defaultAvatar = Object.freeze({
   name: null,
@@ -8,16 +8,10 @@ const _defaultAvatar = Object.freeze({
 const profileReducer = (state = _defaultAvatar, action) => {
   let newAvatar = Object.assign({}, state);
   switch (action.type) {
-  case CHANGE_GIRL: 
-    console.log(action);
-    newAvatar.avatar = './img-ref/avatar-girl.png';
+  
+  case CHANGE_AVATAR: 
+    newAvatar.avatar = action.payload;
     return newAvatar; 
-  case CHANGE_BOY: 
-    newAvatar.avatar = './img-ref/avatar-boy.png';
-    return newAvatar;
-  case CHANGE_GRILL: 
-    newAvatar.avatar = './img-ref/avatar-grill.png';
-    return newAvatar;
   } 
   return state;
 };
