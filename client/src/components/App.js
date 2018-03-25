@@ -11,16 +11,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: '',
       clicks: 0,
       achievements: [
         'Just Peachy!',
       ],
       image: [
         './img-ref/a-img/0-modal.png'
-      ],
-      // avatar: './img-ref/avatar-girl.png',
+      ]
     };
+    this.handleNameSubmit = this.handleNameSubmit.bind(this);
+  }
+  handleNameSubmit(e) {
+
   }
   render() {
     // console.log('props test', this.props);
@@ -42,6 +44,7 @@ class App extends Component {
         <Comic/>
         <Profile
           peachAvatar={avatar}
+          handleNameSubmit={this.handleNameSubmit}
         />
         <PeachImage
           peachImages={this.state.image}
