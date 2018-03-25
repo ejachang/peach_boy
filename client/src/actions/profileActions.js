@@ -1,6 +1,6 @@
-// const GIRL = './img-ref/avatar-girl.png';
-// const BOY = './img-ref/avatar-boy.png';
-// const GRILL = './img-ref/avatar-grill.png';
+const GIRL = './img-ref/avatar-girl.png';
+const BOY = './img-ref/avatar-boy.png';
+const GRILL = './img-ref/avatar-grill.png';
 
 export const CHANGE_AVATAR = 'CHANGE_AVATAR';
 
@@ -11,20 +11,20 @@ export const CHANGE_BOY = 'CHANGE_BOY';
 export const changeGirl = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: './img-ref/avatar-girl.png'
+    payload: GIRL
   };
 };
 
 export const changeBoy = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: './img-ref/avatar-boy.png'
+    payload: BOY
   };
 };
 
 export const changeGrill = () => {
   return {
     type: CHANGE_AVATAR,
-    payload: './img-ref/avatar-grill.png'
+    payload: GRILL
   };   
 };
