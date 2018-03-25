@@ -30,4 +30,6 @@ const addAchievement = () => {
   };
 };
 
-export default addAchievement;
+export default {
+  addAchievement
+};
