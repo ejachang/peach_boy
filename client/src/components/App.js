@@ -20,6 +20,7 @@ class App extends Component {
       ]
     };
     this.handleNameSubmit = this.handleNameSubmit.bind(this);
+    this.handleAvatarChange = this.handleAvatarChange.bind(this);
   }
   handleNameSubmit(e) {
 
@@ -45,6 +46,7 @@ class App extends Component {
         <Profile
           peachAvatar={avatar}
           handleNameSubmit={this.handleNameSubmit}
+          handleAvatarChange={this.handleAvatarChange}
         />
         <PeachImage
           peachImages={this.state.image}

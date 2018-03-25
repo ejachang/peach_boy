@@ -3,9 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import store from './store';
-// import reducerIndex from './reducers/reducerIndex';
 
-// import Header from './components/Header';
 import App from './components/App';
 
 const app = document.getElementById('app');
