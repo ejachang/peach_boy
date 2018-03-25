@@ -2,11 +2,20 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
 import AchievementItem from './AchievementItem';
+import { addAchievement, addClick } from '../actions/scoreboardActions';
+
 
 class Scoreboard extends Component {
   constructor(props) {
     super(props);
+    this.handlePeachClick = this.handlePeachClick.bind(this);
   }
+
+  handlePeachClick() {
+    this.props.dispatch( addClick() );
+    // this.props.dispatch( addAchievement() );
+  }
+
   render() {
     // console.log('scoreboard props', this.props);
     const achievement = this.props.achievements;
@@ -23,7 +32,7 @@ class Scoreboard extends Component {
           {/* { props.achievements.map(achievement => <ListItem achievement={achievement}/>)} */}
         </div>
         <div className='peachImageDiv'>
-          <img src={ image } className='peachImage'/>
+          <img src={ image } className='peachImage' onClick={this.handlePeachClick}/>
         </div>
       </div>
     );

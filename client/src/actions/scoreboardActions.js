@@ -1,4 +1,5 @@
-const ADD_ACHIEVEMENT = 'ADD_ACHIEVEMENT';
+export const ADD_ACHIEVEMENT = 'ADD_ACHIEVEMENT';
+export const ADD_CLICK = 'ADD_CLICK';
 
 const achievementList = [
   'Just Peachy!',
@@ -22,16 +23,20 @@ const achievementList = [
 
 let achievementID = 0;
 
-const addAchievement = () => {
-  achievementID++;
+export const addAchievement = () => {
+  // achievementID++;
   return {
-    type: 'ADD_ACHIEVEMENT_TITLE',
+    type: ADD_ACHIEVEMENT,
     payload: {
+      // achievement: 'test',
       achievement: achievementList[achievementID],
+      nextAchievement: achievementList[achievementID + 1],
     }
   };
 };
 
-export default {
-  addAchievement
+export const addClick = () => {
+  return {
+    type: ADD_CLICK
+  };
 };
