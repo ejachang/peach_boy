@@ -5,32 +5,23 @@ export const CHANGE_GIRL = 'CHANGE_GIRL';
 export const CHANGE_GRILL = 'CHANGE_GRILL';
 export const CHANGE_BOY = 'CHANGE_BOY';
 
-export const changeGirl = (avatarType) => {
+export const changeGirl = () => {
   return {
     type: CHANGE_GIRL,
-    avatarType
+    payload: './img-ref/avatar-girl.png'
   };
 };
 
-export const changeBoy = (avatarType) => {
+export const changeBoy = () => {
   return {
     type: CHANGE_BOY,
-    avatarType
+    payload: './img-ref/avatar-boy.png'
   };
 };
 
-export const changeGrill = (avatarType) => {
+export const changeGrill = () => {
   return {
     type: CHANGE_GRILL,
-    avatarType
+    payload: './img-ref/avatar-grill.png'
   };   
 };
-
-// export default {
-//   changeGirl,
-//   changeBoy,
-//   changeGrill,
-//   CHANGE_GIRL,
-//   CHANGE_GRILL,
-//   CHANGE_BOY
-// };

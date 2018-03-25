@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 import Scoreboard from './Scoreboard';
 import Comic from './Comic';
 import PeachImage from './PeachImage';
 import Profile from './Profile';
 
-import { connect } from 'react-redux';
+import { changeGirl, changeBoy, changeGrill } from '../actions/profileActions';
 
 class App extends Component {
   constructor(props) {
@@ -19,8 +20,7 @@ class App extends Component {
         './img-ref/a-img/0-modal.png'
       ]
     };
-    this.handleNameSubmit = this.handleNameSubmit.bind(this);
-    this.handleAvatarChange = this.handleAvatarChange.bind(this);
+    
   }
   handleNameSubmit(e) {
 
@@ -28,17 +28,11 @@ class App extends Component {
 
   handleAvatarChange(e) {
     if (e.target.id === 'CHANGE_GIRL') {
-      this.props.dispatch({
-        type: 'CHANGE_GIRL'
-      });
+      this.props.dispatch({ changeGirl });
     } else if (e.target.id === 'CHANGE_BOY') {
-      this.props.dispatch({
-        type: 'CHANGE_BOY'
-      });
+      this.props.dispatch({ changeBoy });
     } else if (e.target.id === 'CHANGE_GRILL') {
-      this.props.dispatch({
-        type: 'CHANGE_GRILL'
-      });
+      this.props.dispatch({ changeGrill });
     }
   }
   render() {
@@ -61,8 +55,8 @@ class App extends Component {
         <Comic/>
         <Profile
           peachAvatar={avatar}
-          handleNameSubmit={this.handleNameSubmit}
-          handleAvatarChange={this.handleAvatarChange}
+          // handleNameSubmit={this.handleNameSubmit}
+          // handleAvatarChange={this.handleAvatarChange}
         />
         <PeachImage
           peachImages={this.state.image}

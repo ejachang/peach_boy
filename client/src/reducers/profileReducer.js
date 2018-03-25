@@ -9,6 +9,7 @@ const profileReducer = (state = _defaultAvatar, action) => {
   let newAvatar = Object.assign({}, state);
   switch (action.type) {
   case CHANGE_GIRL: 
+    console.log(action);
     newAvatar.avatar = './img-ref/avatar-girl.png';
     return newAvatar; 
   case CHANGE_BOY: 
