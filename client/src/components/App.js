@@ -5,6 +5,8 @@ import Comic from './Comic';
 import PeachImage from './PeachImage';
 import Profile from './Profile';
 
+import { connect } from 'react-redux';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +19,7 @@ class App extends Component {
       image: [
         './img-ref/a-img/0-modal.png'
       ],
-      avatar: './img-ref/avatar-girl.png',
+      // avatar: './img-ref/avatar-girl.png',
     };
   }
   render() {
@@ -47,4 +49,8 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = (reduxState) => {
+  console.log(reduxState);
+};
+
+export default connect(mapStateToProps)(App);

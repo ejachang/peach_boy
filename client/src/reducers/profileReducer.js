@@ -19,11 +19,6 @@ const profileReducer = (state = _defaultAvatar, action) => {
     return newAvatar;
   } 
   return state;
-  // if (action.type) {
-  //   newAvatar.payload = action.payload;
-  //   return newAvatar;
-  // } 
-  // return state;
 };
 
 export default profileReducer; 
