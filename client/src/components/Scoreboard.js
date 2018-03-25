@@ -9,10 +9,11 @@ class Scoreboard extends Component {
   }
   render() {
     console.log('scoreboard props', this.props);
-    const achievement = this.props;
+    const achievement = this.props.achievements;
+    const clicks = this.props.clicks;
     return (  <div className="peachFont peachsbFont peachsb peachsbPosition">
-      <div className="peachsbFont"> The peach has been clicked 0 times.</div>
-      <div className="peachsbFont"> You have 0 achievements.</div>
+      <div className="peachsbFont"> The peach has been clicked {clicks} times.</div>
+      <div className="peachsbFont"> You have {achievement.length - 1} achievements.</div>
       <div className="peachsbFont">Next achievement:  {achievement[0]}</div> 
       <h4 className="peachsFont peachsbSubtitle"> Achievements </h4>
       {/* { props.achievements.map(achievement => <ListItem achievement={achievement}/>)} */}
@@ -22,10 +23,10 @@ class Scoreboard extends Component {
 }
 
 const mapStateToProps = (reduxState) => {
-  console.log('redux state', reduxState);
+  // console.log('redux state', reduxState);
   return {
     clicks: reduxState.scoreboardReducer.clicks,
-    achivements: reduxState.scoreboardReducer.achivements
+    achievements: reduxState.scoreboardReducer.achievements
   };
 };
 
