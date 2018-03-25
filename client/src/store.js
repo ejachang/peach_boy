@@ -4,7 +4,7 @@ import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 import promise from 'redux-promise-middleware';
 
-import reducerIndex from './reducers/reducer-index';
+import reducerIndex from './reducers/reducerIndex';
 
 
 let store = createStore(

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import store from './store';
-// import reducerIndex from './reducers/index';
+// import reducerIndex from './reducers/reducerIndex';
 
 import Header from './components/Header';
 import Scoreboard from './components/Scoreboard';
@@ -11,7 +11,7 @@ import Comic from './components/Comic';
 import PeachImage from './components/PeachImage';
 import Profile from './components/Profile';
 
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -48,13 +48,11 @@ class App extends React.Component {
 
 const app = document.getElementById('app');
 
-// render ( <App />, app );
-
 render (
   <Provider store={store}>
     <App />
   </Provider>, app
-
 );
+
 // For tests
 // export default App;
