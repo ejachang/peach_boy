@@ -23,6 +23,8 @@ class App extends Component {
     };
   }
   render() {
+    // console.log('props test', this.props);
+    let avatar = this.props.avatar;
     return (
       <div>
         <div className="peachHeader">
@@ -39,7 +41,7 @@ class App extends Component {
         />
         <Comic/>
         <Profile
-          peachAvatar={this.state.avatar}
+          peachAvatar={avatar}
         />
         <PeachImage
           peachImages={this.state.image}
@@ -50,7 +52,10 @@ class App extends Component {
 }
 
 const mapStateToProps = (reduxState) => {
-  console.log(reduxState);
+  // console.log('redux state', reduxState);
+  return {
+    avatar: reduxState.profileReducer.avatar
+  };
 };
 
 export default connect(mapStateToProps)(App);
