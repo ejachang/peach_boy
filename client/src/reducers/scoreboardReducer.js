@@ -1,6 +1,6 @@
 const ADD_ACHIEVEMENT = 'ADD_ACHIEVEMENT';
 
-const achivementsReducer = ( state = [], action) => {
+const achievementsReducer = ( state = [], action) => {
   return state; 
 };
 
