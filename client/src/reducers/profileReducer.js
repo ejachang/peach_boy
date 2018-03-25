@@ -10,8 +10,14 @@ const profileReducer = (state = _defaultAvatar, action) => {
   switch (action.type) {
   case CHANGE_GIRL: 
     newAvatar.avatar = './img-ref/avatar-girl.png';
+    return newAvatar; 
+  case CHANGE_BOY: 
+    newAvatar.avatar = './img-ref/avatar-boy.png';
     return newAvatar;
-  }
+  case CHANGE_GRILL: 
+    newAvatar.avatar = './img-ref/avatar-grill.png';
+    return newAvatar;
+  } 
   return state;
   // if (action.type) {
   //   newAvatar.payload = action.payload;

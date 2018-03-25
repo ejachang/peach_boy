@@ -8,7 +8,9 @@ import reducerIndex from './reducers/reducerIndex';
 
 
 let store = createStore(
-  reducerIndex
+  reducerIndex,
+  // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
 );
 
 let initialState = store.getState();
