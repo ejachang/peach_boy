@@ -20,7 +20,7 @@ const achievementList = [
   'No more peaches!'
 ];
 
-let achievementID = -1;
+let achievementID = 0;
 
 const addAchievement = () => {
   achievementID++;

@@ -9,11 +9,6 @@ import Profile from './Profile';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      image: [
-        './img-ref/a-img/0-modal.png'
-      ]
-    };
   }
 
   render() {
@@ -29,11 +24,9 @@ class App extends Component {
         </div>
         <Scoreboard
         />
-        <Comic />
+        {/* <Comic /> */}
         <Profile />
-        <PeachImage
-          peachImages={this.state.image}
-        />
+        {/* <PeachImage /> */}
       </div>
     );
   }

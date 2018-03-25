@@ -1,14 +1,14 @@
-import React from 'react';
+// import React from 'react';
 
-const PeachImage = (props) => {
-  const { peachImages } = props;
+// const PeachImage = (props) => {
+//   const { peachImages } = props;
 
-  return (
-    <div>
-      <img src={peachImages[0] }
-        className='peachImage'/>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <img src={peachImages[0] }
+//         className='peachImage'/>
+//     </div>
+//   );
+// };
 
-export default PeachImage;
+// export default PeachImage;

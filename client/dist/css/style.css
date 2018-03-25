@@ -56,13 +56,17 @@ h4 {
 .peachsbSubtitle {
   margin-top: 10px; }
 
-.peachImage {
-  height: 26%;
+.peachImageDiv {
   width: 26%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 70px;
-  padding-top: 50px; }
+  padding-left: 470px;
+  padding-top: 50px;
+  position: absolute;
+  margin: 0; }
+
+.peachImage {
+  height: 100%;
+  width: 100%;
+  display: block; }
 
 .peachButton {
   border: none;

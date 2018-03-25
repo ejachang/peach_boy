@@ -52,7 +52,7 @@ class Profile extends Component {
 }
 
 const mapStateToProps = (reduxState) => {
-  console.log('profile state', reduxState);
+  // console.log('profile state', reduxState);
   return {
     avatar: reduxState.profileReducer.avatar,
     name: reduxState.profileReducer.name
