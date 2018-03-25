@@ -14,9 +14,9 @@ const Profile = (props) => {
       </div>
       {/* conditional rendering of name to appear here */}
       <div className="peachpFont">I am a </div> 
-      <button className="peachButton" onClick={handleAvatarChanage}>Girl</button>
-      <button className="peachButton">Boy</button>
-      <button className="peachButton">Grill</button>  
+      <button className="peachButton" id="CHANGE_GIRL" onClick={handleAvatarChange}>Girl</button>
+      <button className="peachButton" id="CHANGE_BOY" onClick={handleAvatarChange}>Boy</button>
+      <button className="peachButton" id="CHANGE_GRILL" onClick={handleAvatarChange}>Grill</button>  
       <div>
         <img src={ peachAvatar }
           className='peachAvatar'/>

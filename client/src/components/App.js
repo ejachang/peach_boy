@@ -25,6 +25,22 @@ class App extends Component {
   handleNameSubmit(e) {
 
   }
+
+  handleAvatarChange(e) {
+    if (e.target.id === 'CHANGE_GIRL') {
+      this.props.dispatch({
+        type: 'CHANGE_GIRL'
+      });
+    } else if (e.target.id === 'CHANGE_BOY') {
+      this.props.dispatch({
+        type: 'CHANGE_BOY'
+      });
+    } else if (e.target.id === 'CHANGE_GRILL') {
+      this.props.dispatch({
+        type: 'CHANGE_GRILL'
+      });
+    }
+  }
   render() {
     // console.log('props test', this.props);
     let avatar = this.props.avatar;
