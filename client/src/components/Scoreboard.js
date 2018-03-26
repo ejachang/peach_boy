@@ -25,7 +25,6 @@ class Scoreboard extends Component {
   }
 
   render() {
-    // console.log('scoreboard props', this.props);
     const achievements = this.props.achievements;
     const nextAchievement = this.props.nextAchievement;
     const clicks = this.props.clicks;
