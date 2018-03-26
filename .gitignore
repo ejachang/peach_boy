@@ -1,6 +1,10 @@
 /client/dist/bundle.js
 /node_modules
-package-lock.json
+
+#files
+client/dist/bundle.js
+client/archive-index.js
+/package-lock.json
 webpack.config.js
 ref/
 NOTES.md
