@@ -1,9 +1,12 @@
 import React from 'react';
 
-const AchievementItem = (props) => (
-  <div>
-    {/* <li >{  props.achievement }</li> */}
-  </div>
-);
+const AchievementItem = (props) => {
+  let { achievement } = props;
+  return (
+    <div>  
+      <li >{ achievement }</li>
+    </div>
+  );
+};
 
 export default AchievementItem;

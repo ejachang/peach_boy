@@ -1,4 +1,4 @@
-import { ADD_ACHIEVEMENT, ADD_CLICK } from '../actions/scoreboardActions';
+import { ADD_ACHIEVEMENT, ADD_CLICK, UPDATE_PEACH_IMAGE } from '../actions/scoreboardActions';
 
 const _defaultScoreboard = Object.freeze({
   clicks: 0,
@@ -16,6 +16,9 @@ const scoreboardReducer = (state = _defaultScoreboard, action) => {
     return newScoreboard;
   case ADD_CLICK:
     newScoreboard.clicks++;
+    return newScoreboard;
+  case UPDATE_PEACH_IMAGE:
+    newScoreboard.image = action.payload.newImage;
     return newScoreboard;
   }
   return state; 

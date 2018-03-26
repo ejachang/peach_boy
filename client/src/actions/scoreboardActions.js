@@ -1,5 +1,6 @@
 export const ADD_ACHIEVEMENT = 'ADD_ACHIEVEMENT';
 export const ADD_CLICK = 'ADD_CLICK';
+export const UPDATE_PEACH_IMAGE = 'UPDATE_PEACH_IMAGE';
 
 const achievementList = [
   'Just Peachy!',
@@ -21,14 +22,25 @@ const achievementList = [
   'No more peaches!'
 ];
 
+const imageList = [
+  './img-ref/a-img/0-modal.png',
+  './img-ref/a-img/1-modal.png',
+  './img-ref/a-img/2-modal.png',
+  './img-ref/a-img/3-modal.png',
+  './img-ref/a-img/4-modal.png',
+  './img-ref/a-img/5-modal.png',
+  './img-ref/a-img/6-modal-default-end.png',
+];
+
+
 let achievementID = 0;
+let imageID = 0;
 
 export const addAchievement = () => {
-  // achievementID++;
+  achievementID++;
   return {
     type: ADD_ACHIEVEMENT,
     payload: {
-      // achievement: 'test',
       achievement: achievementList[achievementID],
       nextAchievement: achievementList[achievementID + 1],
     }
@@ -38,5 +50,15 @@ export const addAchievement = () => {
 export const addClick = () => {
   return {
     type: ADD_CLICK
+  };
+};
+
+export const updateImage = () => {
+  imageID++;
+  return {
+    type: UPDATE_PEACH_IMAGE,
+    payload: {
+      newImage: imageList[imageID]
+    }
   };
 };
