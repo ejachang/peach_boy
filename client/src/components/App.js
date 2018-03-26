@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
 import Scoreboard from './Scoreboard';
-import Comic from './Comic';
-import PeachImage from './PeachImage';
+// import Comic from './Comic';
+// import PeachImage from './PeachImage';
 import Profile from './Profile';
 
 class App extends Component {
