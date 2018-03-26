@@ -8,11 +8,8 @@ import App from './components/App';
 
 const app = document.getElementById('app');
 
-// render (
-//   <Provider store={store}>
-//     <App />
-//   </Provider>, app
-// );
-
-// For tests
-export default App;
+render (
+  <Provider store={store}>
+    <App />
+  </Provider>, app
+);
