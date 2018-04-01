@@ -14,8 +14,13 @@
   <!-- "Help me" - Momotaro-->
   <!--  "Why" - normal person -->
 
-##Future Implementations##
-<li>Router</li>
-<li>Login</li>
-<li>Login Page</li>
+##Done##
+- [X] Click Counter
+- [X] Achivement/image changes
+- [X] Ability to choose avatar
 
+##Future Implementations##
+- [ ] Router
+- [ ] Login
+- [ ] Login Page
+- [ ] 

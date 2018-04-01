@@ -6,6 +6,9 @@ import { changeGirl, changeBoy, changeGrill } from '../actions/profileActions';
 class Profile extends Component {
   constructor(props) {
     super(props);
+    state : {
+
+    }
     this.handleNameSubmit = this.handleNameSubmit.bind(this);
     this.handleAvatarChange = this.handleAvatarChange.bind(this);
   }
