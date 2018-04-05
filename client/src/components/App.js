@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
 import Scoreboard from './Scoreboard';
-import Comic from './Comic';
-import PeachImage from './PeachImage';
+// import Comic from './Comic';
+// import PeachImage from './PeachImage';
 import Profile from './Profile';
 
 class App extends Component {
@@ -14,9 +14,10 @@ class App extends Component {
   render() {
     return (
       <div>
+        
         <div className="peachHeader">
           <div className="peachSide">
-            <h1 className="peachFont peachTitle">Son of a Peach</h1>
+            <h1 className="peachFont peachTitle"><a href="https://en.wikipedia.org/wiki/Momotar%C5%8D">Son of a Peach</a></h1>
           </div>
           <div className="peachSide">
           </div>

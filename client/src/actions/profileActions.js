@@ -30,3 +30,10 @@ export const changeGrill = () => {
     avatarload: GRILL
   };   
 };
+
+export const updateName = (name) => {
+  return {
+    type: CHANGE_NAME,
+    nameload: name
+  };
+};

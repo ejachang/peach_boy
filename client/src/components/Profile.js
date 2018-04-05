@@ -1,17 +1,21 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
-import { changeGirl, changeBoy, changeGrill } from '../actions/profileActions';
+import { changeGirl, changeBoy, changeGrill, updateName } from '../actions/profileActions';
 
 class Profile extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      nameEntered: false
+    };
     this.handleNameSubmit = this.handleNameSubmit.bind(this);
     this.handleAvatarChange = this.handleAvatarChange.bind(this);
   }
 
   handleNameSubmit(e) {
-    //TODO: fill in
+    this.props.dispatch( updateName(e.target.value) );
+    this.setState({ nameEntered: true });
   }
 
   handleAvatarChange(e) {
@@ -25,19 +29,11 @@ class Profile extends Component {
   }
 
   render() {
-    let avatar = this.props.avatar;
-    // let name = this.props.name;
+    let { avatar, name } = this.props;
+    let { nameEntered } = this.state;
     return (
       <div className="peachFont peachpFont peachp peachpPosition">
-        <h4 className="peachpFont">Profile</h4>
-        {/* TODO: include conditional rendering for name if entered */}
-        <div className="peachpFont">
-          <form>
-            <label htmlFor="name">My name is: </label>
-            <input type="text"></input>
-          </form>
-        </div>
-        {/* conditional rendering of name to appear here */}
+        {/* <h4 className="peachpFont">Profile</h4> */}
         <div className="peachpFont">I am a </div> 
         <button className="peachButton" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
         <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
