@@ -1,7 +1,8 @@
 import React from 'react';
 
-const Comic = (props) => (
-  <div></div>
+const Comic = (props) => {
+  return ( <div></div>);
+  
   // <div id={props.hooha}>
   //   <button className="peachButton comicButton"
   //     onClick={props.next}>
@@ -17,6 +18,6 @@ const Comic = (props) => (
   //         id="peachPanel"></img>
   //     </a>
   // </div>
-);
+};
 
 export default Comic;
