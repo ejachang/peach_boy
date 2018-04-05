@@ -7,9 +7,10 @@
   Just click and see all your achievements unlock!
   
 ## Testimonials ##
-  "Why would anyone want to click on something that looks like a butt" - developer 1<br />
+Coming soon!
+  <!-- "Why would anyone want to click on something that looks like a butt" - developer 1<br />
   "I touched the butt" -customer 1<br />
-  "That's a peach, Bob" -customer 2<br />
+  "That's a peach, Bob" -customer 2<br /> -->
 
   <!-- "Help me" - Momotaro-->
   <!--  "Why" - normal person -->
@@ -20,16 +21,23 @@
 - [X] Ability to choose avatar
 
 ##Future Implementations##
-- [ ] Sessions
 - [ ] Updated header
 - [ ] Router
-- [ ] Login
+- [ ] Sessions
 - [ ] Name entry
-- [ ] Login Page
 - [ ] Chatbox
 - [ ] New feature - Dog (coming soon)
 - [ ] New feature - Monkey (coming soon)
 - [ ] New feature - Pheasant (coming soon)
 - [ ] New feature - Oni (coming soon)
+- [ ] Contact
+  * Feedback from
+  * Social media & email links & landing page
 - [ ] Update UI
-- [ ] 
+  * Header
+  * Profile and Scoreboard
+  * Color scheme
+  * Updated ixelated illustrations
+- [ ] Login
+  * Authentication
+  * Login/Signup page
