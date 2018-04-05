@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 var SRC_DIR = path.join(__dirname, 'client/src');
 var DIST_DIR = path.join(__dirname, 'client/dist');
 
@@ -20,13 +21,5 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.css'],
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin(),
-    new webpack.NoEmitOnErrorsPlugin(),
-    new HtmlWebpackPlugin({
-      appMountId: 'react-app-root',
-      title: 'Son of a Peach',
-      filename: resolve(__dirname, 'dist', 'index.html'),
-    }),
-  ]
+  
 };
