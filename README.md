@@ -5,7 +5,7 @@
 
 ## How to Get Started ##
   Just click and see all your achievements unlock!
-  
+
 ## Testimonials ##
 Coming soon!
   <!-- "Why would anyone want to click on something that looks like a butt" - developer 1<br />
@@ -14,6 +14,21 @@ Coming soon!
 
   <!-- "Help me" - Momotaro-->
   <!--  "Why" - normal person -->
+
+# Technology
+==========================================
+## Deployment ##
+* Webpack
+* Heroku
+
+## Front End ##
+* React-Redux
+
+## Back End ##
+* NodeJS for the server side
+
+## Testing ##
+* Jest
 
 ##Done##
 - [X] Click Counter
