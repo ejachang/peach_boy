@@ -20,7 +20,16 @@
 - [X] Ability to choose avatar
 
 ##Future Implementations##
+- [ ] Sessions
+- [ ] Updated header
 - [ ] Router
 - [ ] Login
+- [ ] Name entry
 - [ ] Login Page
+- [ ] Chatbox
+- [ ] New feature - Dog (coming soon)
+- [ ] New feature - Monkey (coming soon)
+- [ ] New feature - Pheasant (coming soon)
+- [ ] New feature - Oni (coming soon)
+- [ ] Update UI
 - [ ] 
