@@ -20,4 +20,13 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.css'],
   },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
+    new HtmlWebpackPlugin({
+      appMountId: 'react-app-root',
+      title: 'Son of a Peach',
+      filename: resolve(__dirname, 'dist', 'index.html'),
+    }),
+  ]
 };
