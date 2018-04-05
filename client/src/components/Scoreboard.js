@@ -40,6 +40,7 @@ class Scoreboard extends Component {
         </div>
         <div className='peachImageDiv'>
           <img src={ image } className='peachImage' onClick={this.handlePeachClick}/>
+          <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
         </div>
       </div>
     );

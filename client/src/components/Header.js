@@ -8,7 +8,6 @@ const Header = () => {
       </div>
       <div className="peachSide">
       </div>
-      <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
     </div>
   );
 };
