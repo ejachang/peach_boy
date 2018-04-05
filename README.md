@@ -16,7 +16,6 @@ Coming soon!
   <!--  "Why" - normal person -->
 
 # Technology
-==========================================
 ## Deployment ##
 * Webpack
 * Heroku
@@ -30,12 +29,12 @@ Coming soon!
 ## Testing ##
 * Jest
 
-##Done##
+## Done ##
 - [X] Click Counter
 - [X] Achivement/image changes
 - [X] Ability to choose avatar
 
-##Future Implementations##
+## Future Implementations ##
 - [ ] Updated header
 - [ ] Router
 - [ ] Sessions
