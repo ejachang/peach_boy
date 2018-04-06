@@ -19,18 +19,27 @@ h5 {
 
 .peachTitle {
   font-size: 30 + 16px;
-  -webkit-margin-before:40px;
-  -webkit-margin-after:0px;
+  a {color: white;padding-left: 40px;}
 }
 
 .peachSubtitle {
-  -webkit-margin-before:10px;
-  -webkit-margin-after:0px;
+  // -webkit-margin-before:10px;
+  // -webkit-margin-after:0px;
   text-align: center;
 }
 
 .peachHeader {
   text-align: center;
+  background: #EC407A;
+  height: 60px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-right: 40px;
+  line-height: 60px;
+  // h1 { position: absolute; left: 40px; line-height: 60px;text-align: left; font-size: 32px; font-weight: 300; letter-spacing: 4px;}
 }
 
 //Scoreboard and Profile

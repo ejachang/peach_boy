@@ -9,17 +9,25 @@ h5 {
   font-family: Arial; }
 
 .peachTitle {
-  font-size: 46px;
-  -webkit-margin-before: 40px;
-  -webkit-margin-after: 0px; }
+  font-size: 46px; }
+  .peachTitle a {
+    color: white;
+    padding-left: 40px; }
 
 .peachSubtitle {
-  -webkit-margin-before: 10px;
-  -webkit-margin-after: 0px;
   text-align: center; }
 
 .peachHeader {
-  text-align: center; }
+  text-align: center;
+  background: #EC407A;
+  height: 60px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-right: 40px;
+  line-height: 60px; }
 
 .peachsbFont, .peachpFont {
   padding-top: 10px;

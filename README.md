@@ -55,3 +55,4 @@ Coming soon!
 - [ ] Login
   * Authentication
   * Login/Signup page
+<!-- - [ ] Jumping game instead of clicking? -->
