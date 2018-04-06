@@ -36,7 +36,7 @@ class Profile extends Component {
         {/* <h4 className="peachpFont">Profile</h4> */}
         <div className="peachpFont">
           I am a: 
-          <button className="peachButton" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
+          <button className="peachButton peachButtonLeft" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
           <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
           <button className="peachButton" id="CHANGE_GRILL" onClick={this.handleAvatarChange}>Grill</button>  
           <img src={ avatar } className='peachAvatar'/>
