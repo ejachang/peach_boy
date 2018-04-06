@@ -1,12 +1,18 @@
-body {
-  background-color: #ffebee; }
+html, body {
+  background-color: #ffebee;
+  margin: 0;
+  padding: 0;
+  display: block; }
 
 h5 {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px; }
 
 .peachFont {
-  font-family: Arial; }
+  font-family: Sans-serif; }
+
+#peachLink {
+  text-decoration: none; }
 
 .peachTitle {
   font-size: 46px; }
@@ -18,13 +24,13 @@ h5 {
   text-align: center; }
 
 .peachHeader {
-  text-align: center;
   background: #EC407A;
   height: 60px;
   width: 100%;
   color: white;
   text-align: left;
   letter-spacing: 1px;
+  margin: 0;
   margin-bottom: 20px;
   padding-right: 40px;
   line-height: 60px; }
@@ -85,12 +91,7 @@ h4 {
   font-size: 16px;
   margin: 4px 2px;
   display: inline-block;
-  border-radius: 50%;
-  font-family: Sans-serif; }
-
-.peachSides {
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0; }
+  border-radius: 50%; }
 
 .peachAvatar {
   height: 50%;
