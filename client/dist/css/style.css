@@ -11,14 +11,15 @@ h5 {
 .peachFont {
   font-family: Sans-serif; }
 
-#peachLink {
-  text-decoration: none; }
-
 .peachTitle {
   font-size: 46px; }
   .peachTitle a {
     color: white;
-    padding-left: 40px; }
+    padding-left: 40px;
+    font-family: Arial;
+    text-decoration: none; }
+  .peachTitle a:hover {
+    text-decoration: underline; }
 
 .peachSubtitle {
   text-align: center; }

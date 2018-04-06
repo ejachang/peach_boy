@@ -20,13 +20,17 @@ h5 {
   font-family: Sans-serif;
 }
 
-#peachLink {
-  text-decoration: none;
-}
-
 .peachTitle {
   font-size: 30 + 16px;
-  a {color: white;padding-left: 40px;}
+  a {
+    color: white;
+    padding-left: 40px;
+    font-family: Arial;
+    text-decoration:none;
+  }
+  a:hover {
+    text-decoration:underline;
+  }
 }
 
 .peachSubtitle {
