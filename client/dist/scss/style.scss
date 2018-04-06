@@ -3,11 +3,12 @@
 
 // #fce4ec
 
-html, body {
+body, html {
   background-color:#ffebee;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   display: block;
+  height: 100%;
 }
 
 //index - title
@@ -40,14 +41,14 @@ h5 {
 }
 
 .peachHeader {
-  background: #EC407A;
+  background: #f06292;
   height: 60px;
   width: 100%;
   color: white;
   text-align: left;
   letter-spacing: 1px;
   margin: 0;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   padding-right: 40px;
   line-height: 60px;
   // h1 { position: absolute; left: 40px; line-height: 60px;text-align: left; font-size: 32px; font-weight: 300; letter-spacing: 4px;}
@@ -69,24 +70,29 @@ h4 {
 .peachp {
   width: 300px;
   padding: 25px;
+  // padding-bottom: 250px;
+  margin: 0 auto;
+  height: 0 auto;
+  min-height: 100%;
   // padding-bottom: 0px;
-  margin-top: 50px;
-  margin-right: 25px;
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0
-}
-.peachpPosition {
+  // margin-top: 50px;
+  // margin-right: 25px;
+  border: 20px solid #ffebee;
+  // background-color: #f7d1d7;
+  // height: 100%;
   float: right;
 }
+
 //Scoreboard
 .peachsb {
   width: 300px;
   padding: 25px;
   padding-bottom: 250px;
-  margin-top: 50px;
-  margin-left: 25px;
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0;
+  margin: 0;
+  // margin-top: 50px;
+  // margin-left: 25px;
+  border: 20px solid #ffebee;
+  // background-color: #f7d1d7;
 }
 
 .peachsbPosition {
@@ -114,14 +120,13 @@ h4 {
 
 .peachButton {
   border: none;
-  padding: 10px 25px;
+  padding: 10px 20px;
   background-color: #f06292;
   cursor: pointer;
   font-size: 16px;
   margin: 4px 2px;
   display: inline-block;
   border-radius: 50%;
-  // font-family: Sans-serif;
 }
 
 // .peachSides {
