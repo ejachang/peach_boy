@@ -13,4 +13,5 @@ const PeachImage = (props) => {
   );
 };
 
+
 export default connect(mapStateToProps)(PeachImage);

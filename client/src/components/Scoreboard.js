@@ -1,26 +1,6 @@
-import React, {Component} from 'react';
-import { connect } from 'react-redux';
-
+import React from 'react';
 import AchievementItem from './AchievementItem';
-import { addAchievement, addClick, updateImage } from '../actions/scoreboardActions';
 
-
-class Scoreboard extends Component {
-  constructor(props) {
-    super(props);
-    this.handlePeachClick = this.handlePeachClick.bind(this);
-  }
-
-  handlePeachClick() {
-    this.props.dispatch( addClick() );
-    
-    ((this.props.clicks + 1) % 5 === 0 && this.props.clicks > 0 && this.props.clicks < 84) ? 
-      this.props.dispatch( addAchievement() ) 
-      : null;
-    
-    ((this.props.clicks + 1) % 10 === 0 && this.props.clicks > 0 && this.props.clicks < 68) ?
-      this.props.dispatch( updateImage() )
-      : null;
 
   }
 
@@ -54,10 +34,7 @@ const mapStateToProps = (reduxState) => {
     achievements: reduxState.scoreboardReducer.achievements,
     image: reduxState.scoreboardReducer.image
   };
+
 };
 
-// const mapDispatchToProps = (dispatch) => {
-  
-// };
-
-export default connect(mapStateToProps)(Scoreboard);
+export default Scoreboard;
