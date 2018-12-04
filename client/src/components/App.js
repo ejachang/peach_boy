@@ -18,9 +18,7 @@ class App extends Component {
         <Header />
         <Scoreboard
         />
-        {/* <Comic /> */}
         <Profile />
-        {/* <PeachImage /> */}
       </div>
     );
   }
