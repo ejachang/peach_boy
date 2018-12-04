@@ -3,8 +3,12 @@
 
 // #fce4ec
 
-body {
-  background-color:#ffebee
+body, html {
+  background-color:#ffebee;
+  margin: 0 auto;
+  padding: 0 auto;
+  display: block;
+  height: 100%;
 }
 
 //index - title
@@ -14,22 +18,40 @@ h5 {
 }
 
 .peachFont {
-  font-family: Arial; 
+  font-family: Sans-serif;
 }
 
 .peachTitle {
   font-size: 30 + 16px;
-  -webkit-margin-before:40px;
-  -webkit-margin-after:0px;
+  a {
+    color: white;
+    padding-left: 40px;
+    font-family: Arial;
+    text-decoration:none;
+  }
+  a:hover {
+    text-decoration:underline;
+  }
 }
 
 .peachSubtitle {
-  -webkit-margin-before:10px;
-  -webkit-margin-after:0px;
+  // -webkit-margin-before:10px;
+  // -webkit-margin-after:0px;
+  text-align: center;
 }
 
 .peachHeader {
-  text-align: center;
+  background: #f06292;
+  height: 60px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 0;
+  // margin-bottom: 20px;
+  padding-right: 40px;
+  line-height: 60px;
+  // h1 { position: absolute; left: 40px; line-height: 60px;text-align: left; font-size: 32px; font-weight: 300; letter-spacing: 4px;}
 }
 
 //Scoreboard and Profile
@@ -48,24 +70,29 @@ h4 {
 .peachp {
   width: 300px;
   padding: 25px;
+  // padding-bottom: 250px;
+  margin: 0 auto;
+  height: 0 auto;
+  min-height: 100%;
   // padding-bottom: 0px;
-  margin-top: 50px;
-  margin-right: 25px;
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0
-}
-.peachpPosition {
+  // margin-top: 50px;
+  // margin-right: 25px;
+  border: 20px solid #ffebee;
+  // background-color: #f7d1d7;
+  // height: 100%;
   float: right;
 }
+
 //Scoreboard
 .peachsb {
   width: 300px;
   padding: 25px;
   padding-bottom: 250px;
-  margin-top: 50px;
-  margin-left: 25px;
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0;
+  margin: 0;
+  // margin-top: 50px;
+  // margin-left: 25px;
+  border: 20px solid #ffebee;
+  // background-color: #f7d1d7;
 }
 
 .peachsbPosition {
@@ -93,20 +120,25 @@ h4 {
 
 .peachButton {
   border: none;
-  padding: 10px 25px;
+  padding: 10px 15px;
+  text-align: center;
   background-color: #f06292;
   cursor: pointer;
   font-size: 16px;
   margin: 4px 2px;
+  margin-left: 10px;
   display: inline-block;
   border-radius: 50%;
-  font-family: Sans-serif;
 }
 
-.peachSides {
-  border: 10px solid #f8bbd0;
-  background-color: #f8bbd0;
-}
+// .peachButtonLeft {
+//   margin-left: 10px;
+// }
+
+// .peachSides {
+//   border: 10px solid #f8bbd0;
+//   background-color: #f8bbd0;
+// }
 
 .peachAvatar {
   height: 50%;
@@ -114,5 +146,5 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   padding-left: 70px;
-  padding-top: 50px;
+  padding-top: 10px;
 }

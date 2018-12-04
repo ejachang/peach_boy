@@ -1,14 +1,17 @@
-// import React from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 
-// const PeachImage = (props) => {
-//   const { peachImages } = props;
+import { updateImage } from '../actions/scoreboardActions';
 
-//   return (
-//     <div>
-//       <img src={peachImages[0] }
-//         className='peachImage'/>
-//     </div>
-//   );
-// };
+const PeachImage = (props) => {
+  const { peachImages } = props;
+  return (
+    <div className='peachImageDiv'>
+      <img src={ image } className='peachImage' onClick={this.handlePeachClick}/>
+      <h5 className="peachFont peachSubtitle">click the peach to free him!</h5>
+    </div>
+  );
+};
 
-// export default PeachImage;
+
+export default connect(mapStateToProps)(PeachImage);

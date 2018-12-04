@@ -8,12 +8,6 @@
 
 ## Testimonials ##
 Coming soon!
-  <!-- "Why would anyone want to click on something that looks like a butt" - developer 1<br />
-  "I touched the butt" -customer 1<br />
-  "That's a peach, Bob" -customer 2<br /> -->
-
-  <!-- "Help me" - Momotaro-->
-  <!--  "Why" - normal person -->
 
 # Technology
 ## Deployment ##
@@ -34,10 +28,12 @@ Coming soon!
 - [X] Achivement/image changes
 - [X] Ability to choose avatar
 
+## In progress ##
+- [ ] Sessions - localStorage
+
 ## Future Implementations ##
 - [ ] Updated header
 - [ ] Router
-- [ ] Sessions
 - [ ] Name entry
 - [ ] Chatbox
 - [ ] New feature - Dog (coming soon)
@@ -55,3 +51,4 @@ Coming soon!
 - [ ] Login
   * Authentication
   * Login/Signup page
+<!-- - [ ] Jumping game instead of clicking? -->

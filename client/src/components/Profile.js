@@ -32,15 +32,14 @@ class Profile extends Component {
     let { avatar, name } = this.props;
     let { nameEntered } = this.state;
     return (
-      <div className="peachFont peachpFont peachp peachpPosition">
+      <div className="peachFont peachpFont peachp">
         {/* <h4 className="peachpFont">Profile</h4> */}
-        <div className="peachpFont">I am a </div> 
-        <button className="peachButton" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
-        <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
-        <button className="peachButton" id="CHANGE_GRILL" onClick={this.handleAvatarChange}>Grill</button>  
-        <div>
-          <img src={ avatar }
-            className='peachAvatar'/>
+        <div className="peachpFont">
+          I am a: 
+          <button className="peachButton peachButtonLeft" id="CHANGE_GIRL" onClick={this.handleAvatarChange}>Girl</button>
+          <button className="peachButton" id="CHANGE_BOY" onClick={this.handleAvatarChange}>Boy</button>
+          <button className="peachButton" id="CHANGE_GRILL" onClick={this.handleAvatarChange}>Grill</button>  
+          <img src={ avatar } className='peachAvatar'/>
         </div>
       </div>
     );

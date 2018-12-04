@@ -8,7 +8,7 @@ var app = express();
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-const portNum = process.env.PORT || 8000;
+const portNum = process.env.PORT || 8111;
 app.listen(portNum, function() {
-  console.log('listening on port 8000!');
+  console.log(`listening on port ${portNum}`);
 });
