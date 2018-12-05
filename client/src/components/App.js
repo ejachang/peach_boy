@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 
 import Scoreboard from './Scoreboard';
 import Header from './Header';
-// import Comic from './Comic';
 // import PeachImage from './PeachImage';
 import Profile from './Profile';
 

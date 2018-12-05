@@ -47,12 +47,12 @@ class Scoreboard extends Component {
   }
 }
 
-const mapStateToProps = (reduxState) => {
+const mapStateToProps = state => {
   return {
-    clicks: reduxState.scoreboardReducer.clicks,
-    nextAchievement: reduxState.scoreboardReducer.nextAchievement,
-    achievements: reduxState.scoreboardReducer.achievements,
-    image: reduxState.scoreboardReducer.image
+    clicks: state.scoreboardReducer.clicks,
+    nextAchievement: state.scoreboardReducer.nextAchievement,
+    achievements: state.scoreboardReducer.achievements,
+    image: state.scoreboardReducer.image
   };
 };
 
